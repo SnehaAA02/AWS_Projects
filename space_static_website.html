@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Space</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #0b1d3a, #000000);
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa") no-repeat center/cover;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 15px rgba(0,0,0,0.7);
+    }
+
+    header p {
+      font-size: 1.3rem;
+      max-width: 600px;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(5px);
+      z-index: 100;
+    }
+
+    nav h2 {
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px rgba(0, 153, 255, 0.6);
+    }
+
+    .card h3 {
+      margin-bottom: 0.8rem;
+      color: #4fc3f7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #000000;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h2>SPACE</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#planets">Planets</a></li>
+      <li><a href="#missions">Missions</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Explore the Universe</h1>
+    <p>Discover planets, stars, galaxies, and the mysteries beyond our world.</p>
+  </header>
+
+  <section id="about">
+    <h2>About Space</h2>
+    <p style="text-align:center; max-width: 800px; margin:auto;">
+      Space is a vast and mysterious place filled with stars, planets, galaxies, and phenomena
+      that challenge our understanding of physics and time. From black holes to distant exoplanets,
+      the universe continues to inspire curiosity and exploration.
+    </p>
+  </section>
+
+  <section id="planets">
+    <h2>Planets</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Earth</h3>
+        <p>Our home planet, the only known world to support life.</p>
+      </div>
+      <div class="card">
+        <h3>Mars</h3>
+        <p>The red planet, a key target in the search for past life.</p>
+      </div>
+      <div class="card">
+        <h3>Jupiter</h3>
+        <p>The largest planet in our solar system with a powerful magnetic field.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="missions">
+    <h2>Space Missions</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Apollo</h3>
+        <p>The first missions that landed humans on the Moon.</p>
+      </div>
+      <div class="card">
+        <h3>Voyager</h3>
+        <p>Exploring the outer planets and interstellar space.</p>
+      </div>
+      <div class="card">
+        <h3>James Webb</h3>
+        <p>A powerful telescope revealing the early universe.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Explore Space | Static Website</p>
+  </footer>
+</body>
+</html>
